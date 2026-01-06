@@ -29,5 +29,5 @@ Tujuan utama dari repository ini adalah:
 ## 📂 Struktur Umum (Contoh)
 
 Struktur di dalam repository ini dapat berubah sesuai kebutuhan, namun secara umum mengikuti pola berikut:
--[Cache dan fecthing menggunakan tanstack query dan axios](cache-and-fetching)
--[Form handling dan validasi input menggunakan React hook form dan zod](react-hoook-form-and-zod)
+- [Cache dan fecthing menggunakan tanstack query dan axios](cache-and-fetching)\
+- [Form handling dan validasi input menggunakan React hook form dan zod](react-hoook-form-and-zod)

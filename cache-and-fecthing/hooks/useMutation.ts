@@ -23,13 +23,13 @@ type UsePostData = {
 };
 
 // make the hook for post the data and make it flexible to modify
-export const usePostData = (params: UsePostData = {}) => {
+export const usePostData = (params?: UsePostData) => {
   return useMutation({
     mutationFn: postData,
-    ...params.mutationConfig,
+    ...params?.mutationConfig,
     onSuccess: (data, variables, onMutateResult, context) => {
       queryClient.invalidateQueries({ queryKey: getDataQueryKey() });
-      params.mutationConfig?.onSuccess?.(
+      params?.mutationConfig?.onSuccess?.(
         data,
         variables,
         onMutateResult,
